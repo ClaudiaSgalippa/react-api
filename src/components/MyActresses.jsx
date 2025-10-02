@@ -1,3 +1,4 @@
+import MyActressesCard from "./MyActressesCard";
 import { useState, useEffect } from "react"; 
 
 export default function ActressesList() { {/*Creazione della variabile di stato*/}
@@ -14,13 +15,10 @@ export default function ActressesList() { {/*Creazione della variabile di stato*
     }, []); {/*Essendo una dipendenza di stato vuota, la funzione partirà soltanto all'avvio del componente (MOUNTING)*/}
 
     return (
-        <div>
-            <h1>Actresses</h1>
-            <ul>
-                {actressesList.map((actress) => (
-                    <li key={actress.id}>{actress.name}</li>
-                ))}
-            </ul>
+        <div className="containerCard">
+            {actressesList.map((actress) => (
+                <MyActressesCard key={actress.id} actress={actress}/>
+            ))}
         </div>
     );
 }
