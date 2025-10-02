@@ -1,12 +1,16 @@
-import { useState } from "react"; {/*Creazione della variabile di stato*/}
+import { useState, useEffect } from "react"; {/*Creazione della variabile di stato*/}
 
 export default function ActressesList() { 
     const [actressesList, setActressesList] = useState ([]); {/*Array vuoto per inserire i dati di results*/}
 
     function fetchActresses () {
         axios.get("https://lanciweb.github.io/demo/api/actresses/")
-            .then((res) => console.log(res)) 
+            .then((res) => console.log(res.data)) 
     }
+
+    useEffect (() => {
+        fetchActresses ();
+    }, []);
 
     return (
         <div>
