@@ -15,10 +15,12 @@ export default function ActressesList() { {/*Creazione della variabile di stato*
     }, []); {/*Essendo una dipendenza di stato vuota, la funzione partirà soltanto all'avvio del componente (MOUNTING)*/}
 
     return (
-        <div className="containerCard">
-            {actressesList.map((actress) => (
-                <MyActressesCard key={actress.id} actress={actress}/>
-            ))}
-        </div>
+        <div className="mainContainer">
+            <div className="containerCard">
+                {actressesList.map((actress) => (
+                    <MyActressesCard key={actress.id} actress={actress}/>
+                ))}
+            </div>
+        </div>       
     );
 }

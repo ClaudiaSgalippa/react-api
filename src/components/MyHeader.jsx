@@ -4,7 +4,7 @@ const MyHeader = () => {
         <>
             <header>
                 <div className="onlyHeader">
-                    <h1>MyHeader</h1>
+                    <h1>Gli attori con il quale abbiamo collaborato:</h1>
                 </div>
             </header>
         </>
