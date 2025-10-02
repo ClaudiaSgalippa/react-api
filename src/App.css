@@ -14,11 +14,18 @@ img {
 
 .onlyHeader {
   text-align: center;
-  font-size: x-large;
+  font-size: xx-large;
+}
+
+.containerCard {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 .actCard {
   display: flex;
+  width: 500px;
   padding-inline: 20px;
   padding-block: 20px;
 }
