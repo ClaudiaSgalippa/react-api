@@ -1,6 +1,7 @@
 import './App.css'
 import MyHeader from './components/MyHeader'
 import MyActresses from './components/MyActresses'
+import MyActor from './components/MyActor'
 
 function App() {
 
@@ -8,6 +9,7 @@ function App() {
     <>
       <MyHeader />
       <MyActresses />
+      <MyActor />
     </>
   )
 }
